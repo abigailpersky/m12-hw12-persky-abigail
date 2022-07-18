@@ -13,6 +13,23 @@ body {
   min-height: 100vh;
 }
 
+.grid-basic .box{
+  width: 50px;
+  height: 50px;
+}
+
+.grid-basic{
+  display: grid; 
+  grid-template-columns: 120px 120px 120px;
+  grid-template-rows: repeat(2, 100px);
+  justify-items: center;
+  align-items: center;
+  border: 2px dotted white;
+  justify-content: center;
+  align-content: center;
+}
+
+
 .header {
   background-color: var(--primary);
   color: var(--white);
@@ -25,6 +42,7 @@ body {
   font-size: 3rem;
   margin: 0;
   font-family: 'Pacifico', cursive;
+
 }
 
 .nav__container {
